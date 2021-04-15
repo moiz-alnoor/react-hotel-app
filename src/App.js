@@ -8,7 +8,7 @@ const App = () => {
 const [data, setData] = useState();
   // get hotel data from api
   const getData = () =>
-    fetch(`http://fake-hotel-api.herokuapp.com/api/hotels?count=9`)
+    fetch(`https://fake-hotel-api.herokuapp.com/api/hotels?count=9`)
       .then((res) => res.json())
   useEffect(() => {
     getData().then((data) => setData(data))
